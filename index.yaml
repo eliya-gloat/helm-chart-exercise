@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  devops_infra:
+  - apiVersion: v2
+    created: '2026-08-04T10:20:00Z'
+    description: Shared base chart for platform microservices
+    digest: 1462a217745447a4ac298aa75f9cf22da2b6a3a7d859826f96b7fc24ed17b4de
+    name: devops_infra
+    type: application
+    urls:
+    - https://eliya-gloat.github.io/helm-chart-exercise/devops_infra-1.15.0.tgz
+    version: 1.15.0
+generated: '2026-08-04T10:20:00Z'
