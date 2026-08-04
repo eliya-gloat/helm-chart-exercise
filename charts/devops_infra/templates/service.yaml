@@ -1,0 +1,14 @@
+{{- if .Values.service.create }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.global.appName }}
+  labels:
+    {{- include "devops_infra.labels" . | nindent 4 }}
+spec:
+  selector:
+    app.kubernetes.io/name: {{ .Values.global.appName }}
+  ports:
+    - port: 80
+      targetPort: {{ .Values.deployment.port }}
+{{- end }}

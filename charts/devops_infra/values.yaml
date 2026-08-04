@@ -1,0 +1,17 @@
+global:
+  appName: ""
+  envType: dev
+  region: euc1
+  cloudProvider: aws
+  namespacePrefix: ""
+
+deployment:
+  replicas: 1
+  image:
+    repository: registry.internal.example/placeholder
+    tag: latest
+  port: 8080
+  extraEnv: []
+
+service:
+  create: true

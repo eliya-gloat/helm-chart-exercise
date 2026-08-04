@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-common-env-vars
+  labels:
+    {{- include "devops_infra.labels" . | nindent 4 }}
+data:
+  ENVIRONMENT: {{ .Values.global.envType | quote }}
+  REGION: {{ .Values.global.region | quote }}
